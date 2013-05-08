@@ -44,7 +44,7 @@ prompt_cmd () {
     set_virtualenv
     set_git_branch
     #PS1="${PYTHON_VIRTUALENV}$PURPLE\$(set_rvm_prompt)$NO_COLOUR\u@\h $BLUE[\w]${B_STATE}\$(parse_git_branch)$NO_COLOUR \$ "
-    PS1="\n${PYTHON_VIRTUALENV}$PURPLE\$(set_rvm_prompt)$NO_COLOUR\w${B_STATE}\$(parse_git_branch)$NO_COLOUR \$ "
+    PS1="${PYTHON_VIRTUALENV}$PURPLE\$(set_rvm_prompt)$NO_COLOUR\w${B_STATE}\$(parse_git_branch)$NO_COLOUR \$ "
 }
  
 PROMPT_COMMAND=prompt_cmd
