@@ -24,3 +24,5 @@ export PATH=/usr/local/heroku/bin:$PATH
 #GO PROGRAMMING LANGUAHGE
 export GOPATH=~/Projects/go
 export PATH=$PATH:$GOPATH/bin
+
+export PATH=~/bin:$PATH
