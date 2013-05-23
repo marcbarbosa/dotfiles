@@ -19,8 +19,8 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/usr/local/deployd/bin
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=/usr/local/heroku/bin:$PATH
 
 #GO PROGRAMMING LANGUAHGE
-export GOPATH="~/Projects/go"
-export PATH="$PATH:$GOPATH/bin"
+export GOPATH=~/Projects/go
+export PATH=$PATH:$GOPATH/bin
