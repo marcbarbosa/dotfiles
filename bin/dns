@@ -1,0 +1,16 @@
+#!/bin/bash
+#Created by marcbarbosa
+
+[ "$1" = "" ] && echo "usage: $0 google|opendns|unblock" && exit 1
+
+case $1 in
+	"google")
+		sudo networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
+		;;
+	"opendns")
+		sudo networksetup -setdnsservers Wi-Fi 208.67.222.222 208.67.220.220
+		;;
+	"unblock")
+		sudo networksetup -setdnsservers Wi-Fi 208.122.23.22 208.122.23.23
+		;;
+esac
