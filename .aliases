@@ -116,3 +116,6 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Start simple HTTP server
 alias http="please python -m SimpleHTTPServer 80"
+
+# cURL with timming
+alias curltime="curl -w "@curl-format.txt" -o /dev/null -s"
