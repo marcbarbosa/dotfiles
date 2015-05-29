@@ -23,4 +23,4 @@ export LANG="en_US"
 complete -W "NSGlobalDomain" defaults
 
 # posh-git style prompt
-PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
+PROMPT_COMMAND='__git_ps1 "\w" " λ "'
