@@ -1,7 +1,7 @@
 #!/bin/bash
 #Created by marcbarbosa
 
-[ "$1" = "" ] && echo "usage: $0 google|opendns|unblock|default" && exit 1
+[ "$1" = "" ] && echo "usage: $0 google|opendns|unblock|1111|default" && exit 1
 
 case $1 in
 	"google")
@@ -12,6 +12,9 @@ case $1 in
 		;;
 	"unblock")
 		sudo networksetup -setdnsservers Wi-Fi 208.122.23.22 208.122.23.23
+		;;
+	"1111")
+		sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1
 		;;
 	"default")
 		sudo networksetup -setdnsservers Wi-Fi Empty
