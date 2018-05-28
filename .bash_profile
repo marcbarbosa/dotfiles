@@ -5,9 +5,6 @@ for file in ~/.{extra,git_prompt,exports,aliases,functions}; do
 done
 unset file
 
-# init z   https://github.com/rupa/z
-. ~/Projects/z/z.sh
-
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
@@ -24,3 +21,6 @@ complete -W "NSGlobalDomain" defaults
 
 # posh-git style prompt
 PROMPT_COMMAND='__posh_git_ps1 "\w" " \nλ "'
+
+# init z   https://github.com/rupa/z
+. ~/Projects/z/z.sh
